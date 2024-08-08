@@ -194,7 +194,7 @@ class MapLocationPicker extends StatefulWidget {
   final String fabTooltip;
 
   /// FAB icon
-  final IconData fabIcon;
+  final Widget fabIcon;
 
   /// Minimum number of characters to trigger the autocomplete
   /// Defaults to 0
@@ -368,7 +368,7 @@ class MapLocationPicker extends StatefulWidget {
     this.focusNode,
     this.mapStyle,
     this.fabTooltip = 'My Location',
-    this.fabIcon = Icons.my_location,
+    this.fabIcon = Icon(Icons.my_location),
     this.minCharsForSuggestions = 0,
     this.buildingsEnabled = true,
     this.cameraTargetBounds = CameraTargetBounds.unbounded,
@@ -674,7 +674,7 @@ class _MapLocationPickerState extends State<MapLocationPicker> {
                           setState(() {});
                         }
                       },
-                      child: Icon(widget.fabIcon),
+                      child: widget.fabIcon,
                     ),
                   ),
                 if (!widget.hideBottomCard)
