@@ -368,7 +368,7 @@ class MapLocationPicker extends StatefulWidget {
     this.focusNode,
     this.mapStyle,
     this.fabTooltip = 'My Location',
-    this.fabIcon = Icon(Icons.my_location),
+    this.fabIcon = const Icon(Icons.my_location),
     this.minCharsForSuggestions = 0,
     this.buildingsEnabled = true,
     this.cameraTargetBounds = CameraTargetBounds.unbounded,
